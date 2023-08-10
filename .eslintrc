@@ -1,0 +1,7 @@
+{
+  "extends": ["eslint-config-unjs"],
+  "rules": {
+    "no-useless-constructor": "off",
+    "unicorn/filename-case": "off"
+  }
+}
