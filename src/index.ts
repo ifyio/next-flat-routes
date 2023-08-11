@@ -3,31 +3,62 @@
 import 'reflect-metadata'
 
 import meow from 'meow'
-import { container } from './container'
-import { CommandRunner } from './domain/command/CommandRunner'
+import { findPageFiles } from './utils/findPageFiles'
+import { findRouteFiles } from './utils/findRouteFiles'
+import { watchDirectory } from './utils/watchDirectory'
+import { createPageFilesIfNotExist } from './utils/createPageFilesIfNotExists'
+import { deleteEmptyDirectoriesWithinRoutes } from './utils/deleteEmptyDirectoriesWithinRoutes'
+import { deletePageFilesIfRouteMissing } from './utils/deletePageFilesIfRouteMissing'
 
-const commandRunner = container.get(CommandRunner)
-
-const cli = meow(
+meow(
   `
-    Usage
-      $ nlr <input>
+  Usage
+    $ npx unflatten-next-routes
 
-    Options
-      --flag, -f  Description of flag
+  Description
+    Convert flat Next.js 13 route files to the nested structure
 
-    Examples
-      $ my-app hello --flag
+  How it works
+    The CLI will watch for any flat route files located within '/routes/' folders located anywhere within the 'app' directory of your Next.js project.
+    It will then generate the nested equivalent in a parallel '/(.routes)/' folder.
+
+  Options
+    --help      Show help
+    --version   Show version
+
+  Note
+    Do not manually modify or delete files in the '/(.routes)/' directory, as they are auto-generated.
+
 `,
   {
     importMeta: import.meta,
-    flags: {
-      flag: {
-        type: 'boolean',
-        shortFlag: 'f',
-      },
-    },
   }
 )
 
-commandRunner.run(cli.input[0], cli.flags)
+function run() {
+  const currentDirectory = process.cwd()
+
+  unflatten(currentDirectory)
+
+  watchDirectory(currentDirectory, () => {
+    unflatten(currentDirectory)
+  })
+}
+
+function unflatten(dir: string) {
+  generatePageFiles(dir)
+  removeUnlinkedPageFiles(dir)
+  deleteEmptyDirectoriesWithinRoutes(dir)
+}
+
+function generatePageFiles(dir: string) {
+  const routeFiles = findRouteFiles(dir)
+  createPageFilesIfNotExist(routeFiles)
+}
+
+function removeUnlinkedPageFiles(dir: string) {
+  const pageFiles = findPageFiles(dir)
+  deletePageFilesIfRouteMissing(pageFiles)
+}
+
+run()

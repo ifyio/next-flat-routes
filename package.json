@@ -1,15 +1,13 @@
 {
-  "name": "next-level-routes",
+  "name": "unflatten-next-routes",
   "version": "0.1.0",
-  "description": "Next level routing for nextjs",
+  "description": "Flat Next.js routes",
   "type": "module",
-  "main": "./dist/index.cjs",
   "module": "./dist/index.mjs",
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
-      "import": "./dist/index.mjs",
-      "require": "./dist/index.cjs"
+      "import": "./dist/index.mjs"
     },
     "./package.json": "./package.json"
   },
@@ -23,27 +21,33 @@
     "lint": "eslint --cache --ext .ts,.js,.mjs,.cjs . && prettier -c src",
     "lint:fix": "eslint --cache --ext .ts,.js,.mjs,.cjs . --fix && prettier -c src -w",
     "prepack": "pnpm build",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "vitest"
   },
   "author": "Ifeanyi Isitor",
   "license": "MIT",
   "dependencies": {
     "esm": "^3.2.25",
-    "inversify": "^6.0.1",
     "meow": "^12.0.1",
     "reflect-metadata": "^0.1.13",
     "unbuild": "^1.2.1"
   },
   "devDependencies": {
     "@types/esm": "^3.2.0",
+    "@types/mock-fs": "^4.13.1",
     "@types/node": "^20.4.8",
+    "@vitest/coverage-v8": "^0.34.2",
     "eslint": "^8.46.0",
     "eslint-config-unjs": "^0.2.1",
+    "mock-fs": "^5.2.0",
     "nodemon": "^3.0.1",
     "prettier": "^3.0.1",
-    "typescript": "^5.1.6"
+    "typescript": "^5.1.6",
+    "vitest": "^0.34.1"
   },
   "bin": {
-    "nlr": "./dist/index.mjs"
+    "unflatten-next-routes": "./dist/index.mjs"
+  },
+  "engines": {
+    "node": ">=16.0.0"
   }
 }
