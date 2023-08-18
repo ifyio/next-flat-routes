@@ -23,7 +23,8 @@
     "prepack": "pnpm build",
     "test": "vitest",
     "prepare": "husky install",
-    "commit-msg": "commitlint --edit $1"
+    "commit-msg": "commitlint --edit $1",
+    "release": "vitest run && changelogen --release && git push --follow-tags && npm publish"
   },
   "author": "Ifeanyi Isitor",
   "license": "MIT",
@@ -40,6 +41,7 @@
     "@types/mock-fs": "^4.13.1",
     "@types/node": "^20.4.8",
     "@vitest/coverage-v8": "^0.34.2",
+    "changelogen": "^0.5.4",
     "eslint": "^8.46.0",
     "eslint-config-unjs": "^0.2.1",
     "husky": "^8.0.3",
