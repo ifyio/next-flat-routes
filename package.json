@@ -30,9 +30,12 @@
   "license": "MIT",
   "dependencies": {
     "esm": "^3.2.25",
+    "lru-cache": "^10.0.1",
     "meow": "^12.0.1",
     "reflect-metadata": "^0.1.13",
-    "unbuild": "^1.2.1"
+    "semver": "^7.5.4",
+    "unbuild": "^1.2.1",
+    "yallist": "^4.0.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.7.1",
