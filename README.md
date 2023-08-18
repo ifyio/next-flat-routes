@@ -37,7 +37,7 @@ app/
 To start using the CLI tool, run the following command in the Next.js project root:
 
 ```bash
-npx unflatten-next-routes
+npx unflatten-next-routes@latest
 ```
 
 This will initiate the tool in watch mode. Then add flat route files within any `/routes/` folder located within the `app` directory. As you add, rename, or remove these flat route files, the equivalent nested route file will be generated or updated within a parallel `/(.routes)/` directory.

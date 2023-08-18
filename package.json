@@ -20,7 +20,7 @@
     "build": "unbuild",
     "lint": "eslint --cache --ext .ts,.js,.mjs,.cjs . && prettier -c src",
     "lint:fix": "eslint --cache --ext .ts,.js,.mjs,.cjs . --fix && prettier -c src -w",
-    "prepack": "pnpm build",
+    "prepack": "yarn build",
     "test": "vitest",
     "prepare": "husky install",
     "commit-msg": "commitlint --edit $1",
