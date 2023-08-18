@@ -1,6 +1,6 @@
 {
   "name": "unflatten-next-routes",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A CLI tool to simplify Next.js routing by allowing developers to work with a flat route structure",
   "type": "module",
   "module": "./dist/index.mjs",
