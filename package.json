@@ -21,7 +21,9 @@
     "lint": "eslint --cache --ext .ts,.js,.mjs,.cjs . && prettier -c src",
     "lint:fix": "eslint --cache --ext .ts,.js,.mjs,.cjs . --fix && prettier -c src -w",
     "prepack": "pnpm build",
-    "test": "vitest"
+    "test": "vitest",
+    "prepare": "husky install",
+    "commit-msg": "commitlint --edit $1"
   },
   "author": "Ifeanyi Isitor",
   "license": "MIT",
@@ -32,12 +34,15 @@
     "unbuild": "^1.2.1"
   },
   "devDependencies": {
+    "@commitlint/cli": "^17.7.1",
+    "@commitlint/config-conventional": "^17.7.0",
     "@types/esm": "^3.2.0",
     "@types/mock-fs": "^4.13.1",
     "@types/node": "^20.4.8",
     "@vitest/coverage-v8": "^0.34.2",
     "eslint": "^8.46.0",
     "eslint-config-unjs": "^0.2.1",
+    "husky": "^8.0.3",
     "mock-fs": "^5.2.0",
     "nodemon": "^3.0.1",
     "prettier": "^3.0.1",
