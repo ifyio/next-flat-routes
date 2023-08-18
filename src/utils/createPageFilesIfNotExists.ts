@@ -29,6 +29,11 @@ export function createPageFilesIfNotExist(routeFiles: RouteFile[]): void {
 
       // Write the content to the file
       fs.writeFileSync(routeFile.pagePath, content)
+
+      // Notify the user
+      console.log(
+        `✔ Created page: ${path.relative(process.cwd(), routeFile.pagePath)}`
+      )
     }
   }
 }

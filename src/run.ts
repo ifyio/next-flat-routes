@@ -1,21 +1,13 @@
 import 'reflect-metadata'
 
 import meow from 'meow'
+import chalk from 'chalk'
 import { findPageFiles } from './utils/findPageFiles'
 import { findRouteFiles } from './utils/findRouteFiles'
 import { watchDirectory } from './utils/watchDirectory'
 import { createPageFilesIfNotExist } from './utils/createPageFilesIfNotExists'
 import { deleteEmptyDirectoriesWithinRoutes } from './utils/deleteEmptyDirectoriesWithinRoutes'
 import { deletePageFilesIfRouteMissing } from './utils/deletePageFilesIfRouteMissing'
-
-const requiredNodeVersion = '16.0.0'
-
-if (process.version < requiredNodeVersion) {
-  console.error(
-    `Error: This tool requires Node.js version ${requiredNodeVersion} or newer. You are using ${process.version}. Please update your Node.js version and try again.`
-  )
-  process.exit(1)
-}
 
 meow(
   `
@@ -50,6 +42,8 @@ function run() {
   watchDirectory(currentDirectory, () => {
     unflatten(currentDirectory)
   })
+
+  console.log(chalk.blue('\n➜ Listening for changes to routes...\n'))
 }
 
 function unflatten(dir: string) {

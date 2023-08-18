@@ -7,6 +7,10 @@ export function deletePageFilesIfRouteMissing(routeFiles: RouteFile[]): void {
     if (!fs.existsSync(routeFile.routePath)) {
       fs.unlinkSync(routeFile.pagePath)
 
+      console.log(
+        `✔ Deleted page: ${path.relative(process.cwd(), routeFile.pagePath)}`
+      )
+
       // Delete all directories leading to to this one if it is now empty
       let currentDirectory = path.dirname(routeFile.pagePath)
       while (!currentDirectory.endsWith('(.routes)')) {
