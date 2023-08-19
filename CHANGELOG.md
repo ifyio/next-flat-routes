@@ -1,6 +1,26 @@
 # Changelog
 
 
+## v0.1.3
+
+[compare changes](https://github.com/ifeanyiisitor/unflatten-next-routes/compare/v0.1.2...v0.1.3)
+
+### 🚀 Enhancements
+
+- Add support for `.ts` extension ([00dc28c](https://github.com/ifeanyiisitor/unflatten-next-routes/commit/00dc28c))
+
+### 📖 Documentation
+
+- Tidy up readme docs ([e738881](https://github.com/ifeanyiisitor/unflatten-next-routes/commit/e738881))
+
+### 🏡 Chore
+
+- Add keywords to package.json ([40baca9](https://github.com/ifeanyiisitor/unflatten-next-routes/commit/40baca9))
+
+### ❤️  Contributors
+
+- Ifeanyi Isitor <ifeanyi.isitor@flute.io>
+
 ## v0.1.2
 
 [compare changes](https://github.com/ifeanyiisitor/unflatten-next-routes/compare/v0.1.1...v0.1.2)
