@@ -1,5 +1,21 @@
 # Changelog
 
+## v0.1.5
+
+[compare changes](https://github.com/ifyio/next-flat-routes/compare/v0.1.4...v0.1.5)
+
+### 📖 Documentation
+
+- Tweak docs ([1b192f3](https://github.com/ifyio/next-flat-routes/commit/1b192f3))
+
+### 🏡 Chore
+
+- Rename to next-flat-routes ([ede2528](https://github.com/ifyio/next-flat-routes/commit/ede2528))
+
+### ❤️  Contributors
+
+- Ifeanyi Isitor <ifeanyi.isitor@flute.io>
+
 ## v0.1.4
 
 [compare changes](https://github.com/ifyio/next-flat-routes/compare/v0.1.3...v0.1.4)
