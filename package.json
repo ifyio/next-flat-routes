@@ -1,6 +1,6 @@
 {
   "name": "next-flat-routes",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "A CLI tool to simplify Next.js routing by allowing developers to work with a flat route structure",
   "keywords": [
     "Next.js",

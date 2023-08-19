@@ -1,5 +1,17 @@
 # Changelog
 
+## v0.1.6
+
+[compare changes](https://github.com/ifyio/next-flat-routes/compare/v0.1.5...v0.1.6)
+
+### 🩹 Fixes
+
+- Only delete empty folders within (.routes) folders ([26cea0f](https://github.com/ifyio/next-flat-routes/commit/26cea0f))
+
+### ❤️  Contributors
+
+- Ifeanyi Isitor <ifeanyi.isitor@flute.io>
+
 ## v0.1.5
 
 [compare changes](https://github.com/ifyio/next-flat-routes/compare/v0.1.4...v0.1.5)
