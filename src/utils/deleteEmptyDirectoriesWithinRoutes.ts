@@ -13,6 +13,7 @@ export function deleteEmptyDirectoriesWithinRoutes(directory: string): void {
 
       // After checking and potentially deleting subdirectories, check if the current directory is empty
       if (
+        directory.includes('(.routes)') &&
         fs.readdirSync(itemPath).length === 0 &&
         !itemPath.endsWith('(.routes)')
       ) {
