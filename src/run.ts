@@ -12,7 +12,7 @@ import { deletePageFilesIfRouteMissing } from './utils/deletePageFilesIfRouteMis
 meow(
   `
   Usage
-    $ npx unflatten-next-routes
+    $ npx n-route
 
   Description
     Convert flat Next.js 13 route files to the nested structure
