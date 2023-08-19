@@ -61,7 +61,7 @@ To start using the `next-flat-routes`, run the following command in the Next.js 
 npx @ifyio/next-flat-routes@latest
 ```
 
-This will initiate `next-flat-routes` in watch mode.
+This will initiate the `next-flat-routes` CLI in watch mode.
 
 Then add flat route files within any `/routes/` folder located within the `app` directory. As you add, rename, or remove these flat route files, the equivalent nested route file will be generated or updated within a parallel `/(.routes)/` directory.
 
