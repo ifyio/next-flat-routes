@@ -1,14 +1,18 @@
-# unflatten-next-routes
+# unflatten-next-routes <!-- omit from toc -->
 
-## Table of Contents
+[![npm version][npm-version-src]][npm-version-href]
+[![Github Actions][github-actions-src]][github-actions-href]
 
-- [unflatten-next-routes](#unflatten-next-routes)
-  - [Table of Contents](#table-of-contents)
-  - [Introduction](#introduction)
-  - [Usage](#usage)
-  - [About flat routes](#about-flat-routes)
-  - [Index route files](#index-route-files)
-  - [Supported file extensions](#supported-file-extensions)
+> Enabling flat routes for Next.js
+
+## Table of Contents <!-- omit from toc -->
+
+- [Introduction](#introduction)
+- [Usage](#usage)
+- [About flat routes](#about-flat-routes)
+- [Index route files](#index-route-files)
+- [Supported file extensions](#supported-file-extensions)
+- [License](#license)
 
 ---
 
@@ -36,7 +40,7 @@ app/
 
 To start using the CLI tool, run the following command in the Next.js project root:
 
-```bash
+```sh
 npx unflatten-next-routes@latest
 ```
 
@@ -88,3 +92,14 @@ For flat index route files, there's no need to prefix the route filename. For in
 ## Supported file extensions
 
 The tool supports .tsx, .jsx, and .js file extensions for flat route files.
+
+## License
+
+[MIT](./LICENSE)
+
+<!-- Badges -->
+
+[npm-version-src]: https://img.shields.io/npm/v/unflatten-next-routes?style=flat-square
+[npm-version-href]: https://npmjs.com/package/unflatten-next-routes
+[github-actions-src]: https://img.shields.io/github/actions/workflow/status/unjs/unflatten-next-routes/ci.yml?style=flat-square
+[github-actions-href]: https://github.com/unjs/unflatten-next-routes/actions?query=workflow%3Aci
