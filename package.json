@@ -1,5 +1,5 @@
 {
-  "name": "n-route",
+  "name": "next-flat-routes",
   "version": "0.1.4",
   "description": "A CLI tool to simplify Next.js routing by allowing developers to work with a flat route structure",
   "keywords": [
@@ -12,12 +12,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/ifyio/n-route.git"
+    "url": "https://github.com/ifyio/next-flat-routes.git"
   },
   "bugs": {
-    "url": "https://github.com/ifyio/n-route/issues"
+    "url": "https://github.com/ifyio/next-flat-routes/issues"
   },
-  "homepage": "https://github.com/ifyio/n-route#readme",
+  "homepage": "https://github.com/ifyio/next-flat-routes#readme",
   "type": "module",
   "module": "./dist/index.mjs",
   "exports": {
@@ -72,7 +72,7 @@
     "vitest": "^0.34.1"
   },
   "bin": {
-    "n-route": "./dist/index.mjs"
+    "next-flat-routes": "./dist/index.mjs"
   },
   "engines": {
     "node": ">=16.0.0"

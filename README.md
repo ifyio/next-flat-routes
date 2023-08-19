@@ -1,4 +1,4 @@
-# n-route <!-- omit from toc -->
+# next-flat-routes <!-- omit from toc -->
 
 [![npm version][npm-version-src]][npm-version-href]
 [![Github Actions][github-actions-src]][github-actions-href]
@@ -20,9 +20,9 @@
 
 With the introduction of [Next.js 13][nextjs], a new folder-based routing mechanism was unveiled. While this approach offers powerful and flexible routing capabilities, it brings with it the challenge of managing deeply nested route files. In large projects with a myriad of routes, locating a specific route or deciphering the intricate structure of the application becomes increasingly complex.
 
-Enter `n-route`.
+Enter `next-flat-routes`.
 
-Designed specifically for Next.js 13, `n-route` is a CLI tool that allows developers to work with a flat route file structure that is easier to manage and understand. With `n-route` your routes can be structured like this:
+Designed specifically for Next.js 13, `next-flat-routes` is a CLI tool that allows developers to work with a flat route file structure that is easier to manage and understand. With `next-flat-routes` your routes can be structured like this:
 
 ```
 app/
@@ -34,7 +34,7 @@ app/
 
 ```
 
-... and `n-route` will ensure that these routes are transformed into the nested format that Next.js expects.
+... and `next-flat-routes` will ensure that these routes are transformed into the nested format that Next.js expects.
 
 ```
 app/
@@ -55,13 +55,13 @@ app/
 
 ## Usage
 
-To start using the `n-route`, run the following command in the Next.js project root:
+To start using the `next-flat-routes`, run the following command in the Next.js project root:
 
 ```sh
-npx n-route@latest
+npx @ifyio/next-flat-routes@latest
 ```
 
-This will initiate `n-route` in watch mode.
+This will initiate `next-flat-routes` in watch mode.
 
 Then add flat route files within any `/routes/` folder located within the `app` directory. As you add, rename, or remove these flat route files, the equivalent nested route file will be generated or updated within a parallel `/(.routes)/` directory.
 
@@ -95,7 +95,7 @@ For flat index route files, there's no need to prefix the route filename. For in
 
 ## Supported file extensions
 
-`n-route` supports `.ts`, `.tsx`, `.jsx`, and `.js` file extensions for flat route files.
+`next-flat-routes` supports `.ts`, `.tsx`, `.jsx`, and `.js` file extensions for flat route files.
 
 ## License
 
@@ -103,8 +103,8 @@ For flat index route files, there's no need to prefix the route filename. For in
 
 <!-- Reference links -->
 
-[npm-version-src]: https://img.shields.io/npm/v/n-route?style=flat-square
-[npm-version-href]: https://npmjs.com/package/n-route
-[github-actions-src]: https://img.shields.io/github/actions/workflow/status/ifyio/n-route/ci.yml?style=flat-square
-[github-actions-href]: https://github.com/ifyio/n-route/actions?query=workflow%3Aci
+[npm-version-src]: https://img.shields.io/npm/v/next-flat-routes?style=flat-square
+[npm-version-href]: https://npmjs.com/package/next-flat-routes
+[github-actions-src]: https://img.shields.io/github/actions/workflow/status/ifyio/next-flat-routes/ci.yml?style=flat-square
+[github-actions-href]: https://github.com/ifyio/next-flat-routes/actions?query=workflow%3Aci
 [nextjs]: https://nextjs.org
