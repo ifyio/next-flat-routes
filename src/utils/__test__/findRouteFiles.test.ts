@@ -17,7 +17,7 @@ describe('findRouteFiles', () => {
         '(layout).tsx': '',
         '(loading).jsx': '',
         '(error).tsx': '',
-        '(route).tsx': '',
+        '(route).ts': '',
         // Nested routes
         'test1.(page).tsx': '',
         'test2.(layout).tsx': '',
@@ -50,8 +50,8 @@ describe('findRouteFiles', () => {
         routePath: '/mocked/path/routes/(page).js',
       },
       {
-        pagePath: '/mocked/path/(.routes)/route.tsx',
-        routePath: '/mocked/path/routes/(route).tsx',
+        pagePath: '/mocked/path/(.routes)/route.ts',
+        routePath: '/mocked/path/routes/(route).ts',
       },
       // Nested routes
       {

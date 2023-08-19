@@ -15,7 +15,7 @@ export function findPageFiles(rootFolder: string): RouteFile[] {
 
       if (stat.isDirectory()) {
         traverseDirectory(absolutePath)
-      } else if (/\/\(\.routes\)\/.*\.(tsx|jsx|js)$/.test(absolutePath)) {
+      } else if (/\/\(\.routes\)\/.*\.(tsx|ts|jsx|js)$/.test(absolutePath)) {
         pageFiles.push({
           routePath: convertPagePathToRoutePath(absolutePath),
           pagePath: absolutePath,

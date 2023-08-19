@@ -16,12 +16,12 @@ describe('convertRoutePathToPagePath', () => {
       pagePath: '/somePath/(.routes)/loading.tsx',
     },
     {
-      routePath: '/somePath/routes/(error).tsx',
-      pagePath: '/somePath/(.routes)/error.tsx',
+      routePath: '/somePath/routes/(error).js',
+      pagePath: '/somePath/(.routes)/error.js',
     },
     {
-      routePath: '/somePath/routes/(route).tsx',
-      pagePath: '/somePath/(.routes)/route.tsx',
+      routePath: '/somePath/routes/(route).ts',
+      pagePath: '/somePath/(.routes)/route.ts',
     },
     // Nested routes
     {

@@ -17,7 +17,7 @@ describe('findPageFiles', () => {
         'layout.tsx': 'content here',
         'loading.jsx': 'content here',
         'error.tsx': 'content here',
-        'route.tsx': 'content here',
+        'route.ts': 'content here',
         // Nested routes
         'test1.page.tsx': 'content here',
         'test2.layout.tsx': 'content here',
@@ -66,9 +66,9 @@ describe('findPageFiles', () => {
       },
       {
         routePath: convertPagePathToRoutePath(
-          '/mocked/path/(.routes)/route.tsx'
+          '/mocked/path/(.routes)/route.ts'
         ),
-        pagePath: '/mocked/path/(.routes)/route.tsx',
+        pagePath: '/mocked/path/(.routes)/route.ts',
       },
       // Nested routes
       {

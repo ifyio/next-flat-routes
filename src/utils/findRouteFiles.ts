@@ -16,7 +16,7 @@ export function findRouteFiles(rootFolder: string): RouteFile[] {
       if (stat.isDirectory()) {
         traverseDirectory(absolutePath)
       } else if (
-        /\/routes\/(.*\.)?\((page|layout|error|loading|route)\)\.(tsx|jsx|js)$/.test(
+        /\/routes\/(.*\.)?\((page|layout|error|loading|route)\)\.(tsx|ts|jsx|js)$/.test(
           absolutePath
         )
       ) {
