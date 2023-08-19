@@ -105,6 +105,6 @@ For flat index route files, there's no need to prefix the route filename. For in
 
 [npm-version-src]: https://img.shields.io/npm/v/n-route?style=flat-square
 [npm-version-href]: https://npmjs.com/package/n-route
-[github-actions-src]: https://img.shields.io/github/actions/workflow/status/unjs/n-route/ci.yml?style=flat-square
-[github-actions-href]: https://github.com/unjs/n-route/actions?query=workflow%3Aci
+[github-actions-src]: https://img.shields.io/github/actions/workflow/status/ifyio/n-route/ci.yml?style=flat-square
+[github-actions-href]: https://github.com/ifyio/n-route/actions?query=workflow%3Aci
 [nextjs]: https://nextjs.org
