@@ -58,7 +58,7 @@ app/
 To start using the `next-flat-routes`, run the following command in the Next.js project root:
 
 ```sh
-npx @ifyio/next-flat-routes@latest
+npx next-flat-routes@latest
 ```
 
 This will initiate the `next-flat-routes` CLI in watch mode.
@@ -87,10 +87,10 @@ Additionally, each route segment should be delimited by a period (.), as seen in
 For flat index route files, there's no need to prefix the route filename. For instance, the admin homepage will be:
 
 ```
-/app/admin/(page).tsx
-/app/admin/(error).tsx
-/app/admin/(layout).tsx
-/app/admin/(loading).tsx
+/app/admin/routes/(page).tsx
+/app/admin/routes/(error).tsx
+/app/admin/routes/(layout).tsx
+/app/admin/routes/(loading).tsx
 ```
 
 ## Supported file extensions
